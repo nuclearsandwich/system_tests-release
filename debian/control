@@ -1,0 +1,13 @@
+Source: ros-r2b2-test-communication
+Section: misc
+Priority: extra
+Maintainer: Dirk Thomas <dthomas@osrfoundation.org>
+Build-Depends: debhelper (>= 9.0.0), ros-r2b2-ament-cmake-auto, ros-r2b2-ament-cmake-gtest, ros-r2b2-ament-cmake-nose, ros-r2b2-ament-lint-auto, ros-r2b2-ament-lint-common, ros-r2b2-builtin-interfaces, ros-r2b2-launch, ros-r2b2-rcl, ros-r2b2-rclcpp, ros-r2b2-rclpy, ros-r2b2-rmw-implementation, ros-r2b2-rmw-implementation-cmake, ros-r2b2-rosidl-default-generators, ros-r2b2-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-r2b2-test-communication
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-r2b2-builtin-interfaces, ros-r2b2-rosidl-default-runtime, ros-r2b2-ros-workspace
+Description: Test publish / subscribe and request / response communication with all primitive as well as builtin types.
+ Also exchange dynamic and static arrays and nested message structures. Each test is run with every available rmw implementation for the sending as well as the receiving side.
